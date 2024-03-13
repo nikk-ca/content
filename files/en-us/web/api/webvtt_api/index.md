@@ -66,17 +66,17 @@ The structure of a WebVTT consists of the following components, some of them opt
 
   14
   00:01:14.815 --> 00:01:18.114
-  - What?
-  - Where are we now?
+  What?
+  Where are we now?
 
   15
   00:01:18.171 --> 00:01:20.991
-  - This is big bat country.
+  This is big bat country.
 
   16
   00:01:21.058 --> 00:01:23.868
-  - [ Bats Screeching ]
-  - They won't get in your hair. They're after the bugs.
+  [ Bats Screeching ]
+  They won't get in your hair. They're after the bugs.
   ```
 
 ### Inner structure of a WebVTT file
@@ -87,7 +87,7 @@ Let's re-examine one of our previous examples, and look at the cue structure in 
 WEBVTT
 
 00:01.000 --> 00:04.000
-- Never drink liquid nitrogen.
+Never drink liquid nitrogen.
 
 00:05.000 --> 00:09.000
 - It will perforate your stomach.
@@ -99,7 +99,7 @@ In the case of each cue:
 - The first line is started with a time, which is the starting time for showing the text that appears underneath.
 - On the same line, we then have a string of "`-->`".
 - We finish the first line with a second time, which is the ending time for showing the associated text.
-- We can then have one or more lines that start with a hyphen (-), each containing part of the text track to be shown.
+- We can then have one or more lines, each containing part of the text track to be shown.
 
 We can also place comments in our `.vtt` file, to help us remember important information about the parts of our file. These should be on separate lines, starting with the string `NOTE`. You'll find more about these in the below section.
 
@@ -147,19 +147,19 @@ A comment consists of three parts:
 
   1
   00:02:15.000 --> 00:02:20.000
-  - Ta en kopp varmt te.
-  - Det är inte varmt.
+  Ta en kopp varmt te.
+  Det är inte varmt.
 
   2
   00:02:20.000 --> 00:02:25.000
-  - Har en kopp te.
-  - Det smakar som te.
+  Har en kopp te.
+  Det smakar som te.
 
   NOTE This last line may not translate well.
 
   3
   00:02:25.000 --> 00:02:30.000
-  - Ta en kopp
+  Ta en kopp
   ```
 
 ## Styling WebVTT cues
@@ -211,7 +211,7 @@ STYLE
 }
 
 00:00:00.000 --> 00:00:10.000
-- Hello <b>world</b>.
+Hello <b>world</b>.
 
 NOTE style blocks cannot appear after the first cue.
 ```
